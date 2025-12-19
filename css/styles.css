@@ -185,6 +185,7 @@ a {
 .hero-btn:hover,
 .hero-btn:focus {
   background: #404bbf;
+  border: none;
 }
 
 /* FEATURES */
@@ -535,12 +536,12 @@ a {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .modal-overlay.is-open {
+.modal-overlay.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
   transition-delay: 0ms;
-} */
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -599,6 +600,12 @@ a {
 
 .modal-bth:focus .modal-close-bth {
   fill: #ffffff;
+}
+
+.modal-bth:hover,
+.modal-bth:focus {
+  background-color: #404bbf;
+  border: none;
 }
 
 
@@ -738,23 +745,32 @@ a {
   color: #4d5ae5;
 }
 .checkbox:focus + .user-privacy .custom-checkbox {
-  border-color: #4D5AE5;
+  border-color: rgba(46, 47, 66, 0.4);
 }
 
 .checkbox:focus-visible + .user-privacy .custom-checkbox {
-  border-color: #4D5AE5;
+  border-color: rgba(46, 47, 66, 0.4);
 }
 
 .checkbox:focus + .user-privacy .custom-checkbox .custom-checkbox-icon {
-  fill: #4D5AE5;
+  fill: transparent;
 }
 .checkbox:checked + .user-privacy .custom-checkbox {
   border: none;
-  background-color: #404BBF;
+  background-color: #404bbf;
   fill: #F4F4FD;
 }
 .checkbox:checked + .user-privacy .custom-checkbox .custom-checkbox-icon {
   fill: #F4F4FD;
+}
+.send-btn:hover,
+.send-btn:focus {
+  background-color: #404bbf;
+  border: none;
+}
+.send-btn:hover .icon-telegram,
+.send-btn:focus .icon-telegram {
+  fill: #ffffff;
 }
 .send-btn {
   margin-top: 24px;
